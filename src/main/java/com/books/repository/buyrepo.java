@@ -1,6 +1,7 @@
 package com.books.repository;
 
 import com.books.model.Buy;
+import com.books.model.*;
 import com.books.model.Coupons;
 import com.books.model.Output;
 import org.springframework.data.jpa.repository.JpaRepository;
