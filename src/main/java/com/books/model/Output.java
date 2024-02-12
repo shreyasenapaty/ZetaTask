@@ -1,8 +1,9 @@
 package com.books.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.util.Date;
 
 @Entity
@@ -58,6 +59,7 @@ public class Output {
     }
 
     @Column
+    @Id
     private int coupon_no;
     @Column
     private double cost;

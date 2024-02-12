@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface Oprepo extends JpaRepository<Output, Integer> , CrudRepository<Output, Integer> {
+public interface Oprepo extends JpaRepository<Output, Integer>  {
     @Query(value = "SELECT * FROM output where output.username=:user", nativeQuery = true)
     Output findUser(@Param("user") String username);
 

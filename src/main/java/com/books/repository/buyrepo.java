@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface buyrepo extends JpaRepository<Buy, String> , CrudRepository<Buy,String>{
+public interface buyrepo extends JpaRepository<Buy, String>{
     @Query(value = "SELECT * FROM buy where buy.username=:user", nativeQuery=true)
     Buy findbuyer(@Param("user") String username);
 }
